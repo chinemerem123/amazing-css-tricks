@@ -1,0 +1,98 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+}
+.sha1{
+    position: absolute;
+    width:220px;
+    height: 360px;
+    background: linear-gradient(to bottom right,rgb(241, 75, 178),rgb(255, 197, 37));
+    top:calc(50% - 180px);
+    left:calc(50% - 510px);
+    z-index: -1;
+    transform: skewX(5deg) rotateY(-30deg);
+    filter: blur(5px);
+    box-shadow: 0 0 5px rgb(241, 75, 178),
+                0 0 20px rgb(255, 197, 37),
+                0 0 50px rgb(241, 75, 178),
+                0 0 100px rgb(255, 197, 37);
+}
+.sha2{
+    position: absolute;
+    width:220px;
+    height: 360px;
+    background: linear-gradient(to top left,rgb(209, 13, 144),rgb(98, 118, 235));
+    top:calc(50% - 180px);
+    left:calc(50% - 110px);
+    z-index:-1;
+    filter: blur(5px);
+    box-shadow:0 0 5px rgb(98, 118, 235),
+           0 0 20px rgb(98, 118, 235),
+           0 0 50px rgb(209, 13, 144),
+           0 0 100px rgb(98, 118, 235);
+}
+.sha3{
+    position: absolute;
+    width:220px;
+    height: 360px;
+    background: linear-gradient(to bottom left,rgb(37, 250, 186),rgb(202, 238, 39));
+    top:calc(50% - 180px);
+    right:calc(50% - 510px);
+    transform: skewX(-5deg) rotateY(30deg);
+    filter: blur(5px);
+    box-shadow:0 0 5px  rgb(202, 238, 39),
+               0 0 20px  rgb(202, 238, 39),
+               0 0 50px rgb(37, 250, 186),
+               0 0 20px  rgb(202, 238, 39);
+   
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px;
+    width:80%;
+    height:80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
+    .card{
+        position: relative;
+        width:250px;
+        height: 300px;
+        background-color:rgba($color: #e7e7e7, $alpha: 0.2);
+        transition: 0.5s;
+        padding:20px;
+        border-radius: 10px;
+        backdrop-filter:blur(-10px) ;
+
+        h3{
+            color:white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+        }
+        p{
+            color:rgb(236, 236, 236);
+            margin-top: 20px;
+        }
+        button{
+            margin-top:20px;
+            padding:5px;
+            color: rgb(66, 66, 66);
+            border:none;
+            outline:none;
+            
+        }
+    }
+}
